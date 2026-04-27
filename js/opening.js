@@ -16,12 +16,17 @@
    "Kamu tuh spesial banget\ndi mata aku 🌸"
 ────────────────────────────────────────────────── */
 const slides = [
-  "Halo....",
-  "Aku sayang kamu banget.. 🥺",
-  "Udah lama aku pengen bilang ini...",
+  "Halo fell....",
+  "Maaf ya kalo aku sering bikin kamu sedih 🥺",
+  "Bikin kamu nangis juga",
+  "Aku sayang banget sama kamu.. 🥺",
+  "Sebenarnya udah lama aku pengen bilang ini...",
   "Tapi selalu gugup tiap kali mau ngomong 😅",
   "Jadi aku bikin ini khusus buat kamu 💌",
   "Ada satu pertanyaan penting...",
+  "PRENKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+  "Gk deng boong, aku cuma mau bilang...",
+  "Jadi......",
 ];
 
 /* ──────────────────────────────────────────────────

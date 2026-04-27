@@ -30,14 +30,14 @@ const noMessages = [
    Tambah hex warna lain jika mau lebih warna-warni
 ────────────────────────────────────────────────── */
 const confettiColors = [
-  "#ff85a1",
-  "#ffd6e7",
-  "#c084fc",
-  "#f9a8d4",
-  "#fb7185",
-  "#e879a0",
-  "#facc15",
-  "#a78bfa",
+  "#3b82f6",
+  "#93c5fd",
+  "#bfdbfe",
+  "#dbeafe",
+  "#f472b6",
+  "#fbcfe8",
+  "#60a5fa",
+  "#ffffff",
 ];
 
 /* ──────────────────────────────────────────────────
@@ -174,7 +174,7 @@ function createConfettiPiece() {
 /* ──────────────────────────────────────────────────
    FLOATING HEARTS BACKGROUND
 ────────────────────────────────────────────────── */
-const heartEmojis = ["💗", "💓", "💖", "💝", "💞", "🌸", "✨", "💕"];
+const heartEmojis = ["💙", "🩵", "💙", "🤍", "💗", "✨", "🩷", "💎"];
 
 function createFloatingHeart() {
   const el = document.createElement("div");
