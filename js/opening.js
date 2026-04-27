@@ -24,7 +24,7 @@ const slides = [
   "Tapi selalu gugup tiap kali mau ngomong 😅",
   "Jadi aku bikin ini khusus buat kamu 💌",
   "Ada satu pertanyaan penting...",
-  "PRENKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+  "PRENKKKKKKKKKKKKKKK",
   "Gk deng boong, aku cuma mau bilang...",
   "Jadi......",
 ];
