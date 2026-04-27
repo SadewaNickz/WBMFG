@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+  ╔══════════════════════════════════════════╗
+  ║         JUDUL TAB BROWSER                ║
+  ║  Ganti teks di bawah sesuai keinginan    ║
+  ╚══════════════════════════════════════════╝
+  -->
+  <title>💌 Ada yang Ingin Aku Tanyakan...</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet utama -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--
+  ╔══════════════════════════════════════════╗
+  ║   🎵 MUSIK                               ║
+  ║   Letakkan file mp3 di folder ini        ║
+  ║   lalu ganti "lagu.mp3" dengan           ║
+  ║   nama file musikmu.                     ║
+  ║   Musik mulai otomatis setelah opening.  ║
+  ╚══════════════════════════════════════════╝
+  -->
+  <audio id="bg-music" loop>
+    <source src="lagu.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ── OPENING SLIDE ─────────────────────
+       Kalimat-kalimat di sini diatur di
+       js/opening.js  (array "slides")
+  ──────────────────────────────────────── -->
+  <div id="opening">
+    <div id="slide-text"></div>
+    <div id="slide-dots"></div>
+    <button id="btn-skip" onclick="skipOpening()">Lewati ›</button>
+  </div>
+
+  <!-- ── BACKGROUND FLOATING HEARTS ───────── -->
+  <div id="hearts-bg"></div>
+
+  <!-- ── MAIN CONTENT (muncul setelah opening) -->
+  <div id="main-card-wrapper">
+
+    <!-- POPUP setelah YES diklik -->
+    <div id="popup">
+      <div class="popup-box">
+        <span class="popup-emoji">🥰</span>
+        <!--
+          Ganti teks popup di bawah sesuai keinginan
+        -->
+        <div class="popup-title">YEAAAY! 🎉</div>
+        <div class="popup-sub">
+          Sekarang kamu resmi jadi pacarku! 😍❤️<br>
+          Makasih udah mau nerima aku ya, sayang~
+        </div>
+        <button class="btn-close" onclick="closePopup()">Aku juga suka kamu 💖</button>
+      </div>
+    </div>
+
+    <!-- MAIN CARD -->
+    <div class="card">
+
+      <div class="eyebrow">✨ pesan spesial buat kamu ✨</div>
+
+      <!--
+        Ganti judul di bawah sesuai keinginan
+      -->
+      <h1 class="title">Aku punya<br><em>pertanyaan penting</em>...</h1>
+
+      <!--
+      ╔══════════════════════════════════════════╗
+      ║   FOTO                                   ║
+      ║   Cara ganti:                            ║
+      ║   1. Hapus div.placeholder-label         ║
+      ║   2. Uncomment tag <img> di bawahnya     ║
+      ║   3. Isi src dengan nama file fotomu     ║
+      ║      (letakkan foto di folder ini juga)  ║
+      ╚══════════════════════════════════════════╝
+      -->
+      <div class="photos">
+
+        <!-- FOTO 1 -->
+        <div class="photo-slot">
+          <!-- <img src="foto1.jpg" alt="Foto 1" /> -->
+          <div class="placeholder-label"><span>📸</span>foto kamu</div>
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="photo-slot">
+          <!-- <img src="foto2.jpg" alt="Foto 2" /> -->
+          <div class="placeholder-label"><span>💑</span>foto kita</div>
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="photo-slot">
+          <!-- <img src="foto3.jpg" alt="Foto 3" /> -->
+          <div class="placeholder-label"><span>🌸</span>foto kamu</div>
+        </div>
+
+      </div>
+
+      <div class="divider">💗</div>
+
+      <!--
+        Ganti pertanyaan utama di bawah sesuai keinginan
+      -->
+      <p class="question">"Mau nggak kamu jadi pacarku? ❤️"</p>
+
+      <!-- TOMBOL -->
+      <div class="btn-area" id="btn-area">
+        <button class="btn-yes" id="btn-yes" onclick="onYes()">
+          Mau banget 💖
+        </button>
+        <button class="btn-no" id="btn-no">
+          Nggak deh 😝
+        </button>
+      </div>
+
+      <div id="hint-text"></div>
+      <div id="no-counter"></div>
+
+      <!--
+        Ganti teks footer di bawah sesuai keinginan
+      -->
+      <div class="footer-note">dibuat dengan 💗 khusus buat kamu</div>
+
+    </div><!-- /card -->
+  </div><!-- /main-card-wrapper -->
+
+  <!-- JavaScript (urutan penting!) -->
+  <script src="js/opening.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
